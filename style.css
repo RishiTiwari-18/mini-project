@@ -1,0 +1,88 @@
+@font-face {
+    font-family: font1;
+    src: url(/64d3dd9edfb41666c35b15bf_NeueHaasDisplay-Mediu.woff);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(/64d3dd9edfb41666c35b15c0_NeueHaasDisplay-Roman.woff);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: font1;
+    text-transform: capitalize;
+}
+
+.main{
+    width: 100%;
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+}
+
+.nav-elem{
+    display: flex;
+    align-items: center;
+    gap: .5vw;
+
+}
+
+.nav-elem h1{
+    position: relative;
+    font-size: 1.1vw;
+    font-weight: 100;
+    border: 1px solid rgba(0, 0, 0, 0.241);
+    padding: .8vw 1.6vw;
+    border-radius: 25px;
+    font-family: font2;
+    transition: all ease 0.3s;
+    overflow: hidden;
+}
+
+.nav-elem h1::after{
+    content: "";
+    height: 200%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+}
+
+.nav-elem h1:hover::after{
+    top: 0;
+    border-radius: 0;
+}
+
+.nav-elem a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 9;
+    transition: all ease 0.3s;
+}
+
+.nav-elem h1:hover a{
+    color: #fff;
+}
