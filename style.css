@@ -127,7 +127,8 @@ html,body{
 
 .page2 video{
     width: 100%;
-    border-radius: 20px;
+    -webkit-clip-path: inset(0px round 10px);
+    clip-path: inset(0px round 20px);
     z-index: 10;
 }
 /* 
