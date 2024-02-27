@@ -20,11 +20,13 @@ html,body{
     font-family: font1;
     text-transform: capitalize;
     background-color: #EFEAE3;
+    overscroll-behavior: none;
 }
 
 .main{
     z-index: 100;
     position: relative;
+    overflow: hidden;
 
 }
 
@@ -120,18 +122,24 @@ html,body{
 }
 
 .page2{
+    min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
     padding: 2vw;
+    overflow: hidden;
 }
 
-.page2 video{
+
+
+.page2 video {
+    position: relative;
     width: 100%;
     -webkit-clip-path: inset(0px round 10px);
     clip-path: inset(0px round 20px);
-    z-index: 10;
-}
-/* 
+    z-index: 111;
+  }
+  
+
 .hero-shape{
     position: absolute;
     right: 5%;
@@ -139,12 +147,71 @@ html,body{
     height: 36vw;
     width: 36vw;
     border-radius: 50%;
-    background-color: rgb(228, 159, 10);
+   background: linear-gradient(#FE330A, #fe630a);
     filter: blur(20px);
     z-index: 1;
-} */
+}
+
+.hero-shape1{
+    position: absolute;
+    right: 20%;
+    top: 90vh;
+    height: 36vw;
+    width: 36vw;
+    border-radius: 50%;
+   background: linear-gradient(#FE330A, #fe630a);
+    filter: blur(20px);
+    z-index: 1;
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.hero-shape2{
+    position: absolute;
+    right: -10%;
+    top: 80vh;
+    height: 36vw;
+    width: 56vw;
+    border-radius: 500px;
+   background: linear-gradient(#FE330A, #fe630a);
+    filter: blur(20px);
+    z-index: 1;
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime1 {
+    
+    from{
+        transform: translate(-0% , 10%) rotate(30deg);
+    }
+
+    to{
+        transform: translate(0% , -10%) rotate(-30deg);
+    }
+    
+}
+
+@keyframes anime2 {
+    
+    from{
+        transform: translate(-5% , 5%) rotate(10deg);
+    }
+
+    to{
+        transform: translate(5% , -5%) rotate(-10deg);
+    }
+    
+}
 
 .page3{
+    position: relative;
     min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
@@ -206,6 +273,7 @@ html,body{
     font-size: 4vw;
     text-transform: none;
     width: 800px; ;
+    z-index: 99;
 }
 
 .page3-right{
@@ -234,6 +302,66 @@ html,body{
     margin-left: 2vw;
     margin-top: 8vw;
 }
+
+.page3 .hero-shape3{
+    height: 34vw;
+    width: 34vw;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #FE330A;
+    left: 25%;
+    bottom: 10%;
+    filter: blur(20px);
+    z-index: 2;
+    animation-name: anime3;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.page3 .hero-shape4{
+    height: 36vw;
+    width: 33vw;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #FF9831;
+    left: 27%;
+    bottom: 8%;
+    animation-name: anime4;
+    filter: blur(20px);
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes anime3 {
+    
+    from{
+        transform: translate(-10% , 10%) ;
+    }
+
+    to{
+        transform: translate(10% , -10%) ;
+    }
+    
+}
+
+@keyframes anime4 {
+    
+    from{
+        transform: translate(-10% , 10%) rotate(180deg);
+    }
+
+    to{
+        transform: translate(10% , -10%) rotate(-180deg);
+    }
+    
+}
+
+
 
 
 .page4{
@@ -416,6 +544,8 @@ html,body{
     padding-top: 5vw;
 }
 
+
+
 .page6 h6{
     font-size: 1vw;
     font-family: font2;
@@ -463,9 +593,6 @@ html,body{
 }
 
 .footer{
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* flex-direction: column; */
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -478,11 +605,81 @@ html,body{
 
 }
 
+.footer-shape{
+    position: absolute;
+    height: 30vw;
+    left: -25%;
+    top: -40%;
+    width: 140%;
+    z-index: 0;
+    filter: blur(50px);
+    background-color: #FE330A;
+    animation-name: anime5;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.footer-shape1{
+    position: absolute;
+    height: 40vw;
+    right: -35%;
+    top: -65%;
+    width: 140%;
+    z-index: 0;
+    filter: blur(50px);
+    background-color: #FE330A;
+    animation-name: anime6;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.footer-shape2{
+    position: absolute;
+    height: 30vw;
+    width: 100%;
+    background-color: #FE330A;
+    left: 0;
+    top: -35%;
+    filter: blur(50px);
+}
+
+
+@keyframes anime5 {
+    
+    from{
+        transform: translate(0% , 0%) rotate(-5deg) ;
+    }
+
+    to{
+        transform: translate(0% , 0%) rotate(-20deg);
+    }
+    
+}
+
+@keyframes anime6 {
+    
+    from{
+        transform: translate(-10% , 10%) rotate(20deg) ;
+    }
+
+    to{
+        transform: translate(10% , -10%) rotate(30deg);
+    }
+    
+}
+
 .address{
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 900px;
     padding: 8vw 6vw 0vw 4vw;
+    z-index: 66;
 }
 
 .footerleft h2{
@@ -490,8 +687,9 @@ html,body{
 }
 
 .footerright {
-    width: 22%;
+    width: 42%;
 }
+
 
 .footerright h3{
     font-family: font2;
@@ -502,18 +700,23 @@ html,body{
 
 
 .sundown h1{
+    position: absolute;
     font-size: 23vw;
     text-align: center;
+    bottom: 5%;
 }
 
 .links{
     
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 10vh;
     border-top: 1px solid #EFEAE3;
-    width: 100%;
+    width: 95%;
+    left: 2.5%;
+    bottom: 0;
 }
 
 .links a{
