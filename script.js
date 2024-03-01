@@ -20,7 +20,34 @@ elems.forEach(function(e){
 })
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3.5,
-    spaceBetween: 30,
+    slidesPerView: 1.5,
+    spaceBetween: 60,
+   
+    breakpoints:{
+        600:{
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+        },
+
+    },
     freeMode: true,
   });
+
+
+var screen = document.querySelector(".fullscr")
+var button = document.querySelector(".nav h3")
+var photo = document.querySelector(".nav img")
+var flag = 0
+
+button.addEventListener("click", function(){
+    if (flag == 0) {
+        screen.style.top = "0%"
+        photo.style.opacity = 0
+        flag = 1
+    }else{
+        screen.style.top = "-120%"
+        photo.style.opacity = 1
+        flag = 0
+    }
+  
+})
