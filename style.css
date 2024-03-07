@@ -759,6 +759,28 @@ html,body{
 }
 
 
+.loader{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: 99999999999;
+    color: #EFEAE3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader h2{
+    position: absolute;
+    font-size: 3vw;
+    display: none;
+    color: transparent;
+    background: linear-gradient(to right, #FF9831 ,#FE330A);
+    -webkit-background-clip: text;
+}
+
+
 
 
 

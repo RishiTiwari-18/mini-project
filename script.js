@@ -51,3 +51,23 @@ button.addEventListener("click", function(){
     }
   
 })
+
+gsap.to(".loader h2",{
+    display: "block",
+    ease: "none",
+    stagger: .6,
+    duration: .3,
+})
+gsap.to(".loader h2",{
+    display: "none",
+    ease: "none",
+    delay:.3,
+    stagger: .6,
+    duration: .3,
+})
+
+gsap.to(".loader",{
+    top:"-100%",
+    duration:.7,
+    delay: 2,
+})
