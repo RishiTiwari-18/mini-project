@@ -67,7 +67,7 @@ gsap.to(".loader h2",{
 })
 
 gsap.to(".loader",{
-    top:"-100%",
+    top:"-120%",
     duration:.7,
     delay: 2,
 })

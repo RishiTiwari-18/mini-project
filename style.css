@@ -841,22 +841,22 @@ html,body{
     }
     
     .left h2{
-        width: 80%;
+        width: 90%;
         font-weight: 900;
-        font-size: 5.1vw;
-        line-height: 5.5vw;
+        font-size: 6.1vw;
+        line-height: 7vw;
        
     }
     
     .right{
         text-align: end;
-        margin-top: 15vw;
+        margin-top: 20vw;
     }
     
     .right h1{
-        font-size: 15vw;
+        font-size: 18vw;
         font-weight: 900;
-        line-height: 12.5vw;
+        line-height: 17vw;
     
     }
 
@@ -866,7 +866,7 @@ html,body{
     min-height: 75vh;
     width: 100%;
     background-color: #EFEAE3;
-    padding: 4vw;
+    padding: 0vw 4vw;
     overflow: hidden;
 }
 
@@ -913,7 +913,7 @@ html,body{
     min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
-    padding: 5vw 0vw;
+    padding: 15vw 0vw;
 }
 
 .moving-text h1{
@@ -929,12 +929,13 @@ html,body{
 
 
 .page3-bottom{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 20vw 0vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 0vw;
    
 }
 
@@ -947,19 +948,19 @@ html,body{
 }
 
 .page3-right{
-    width: 75%;
-    margin-top: 4vw;
+    width: 90%;
+    margin-top: 0vw;
     z-index: 99;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    margin-right: 20vw;
+    align-items: center;
+
 }
 
 .page3-right h2{
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: 100;
-    line-height: 20px;
+    line-height: 28px;
     text-transform: initial;
     font-family: font2;
 
@@ -973,11 +974,7 @@ html,body{
 }
 
 .page3>h5{
-    font-size: 3.5vw;
-    font-weight: 100;
-    font-family: font2;
-    margin-left: 2vw;
-    margin-top: 8vw;
+display: none;
 }
 
 .page3 .hero-shape3{
@@ -1017,7 +1014,7 @@ html,body{
 
 .page5 .design-box{
     margin-top: 15vw;
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     background-color: black;
     border-radius: 20px;
@@ -1037,7 +1034,7 @@ html,body{
 }
 
 .page5-text h1{
-    font-size: 10vw;
+    font-size: 12vw;
     border-left: 2px solid #504A45;
     padding-left: 3.5vw;
     line-height: 10.5vw;
@@ -1051,8 +1048,8 @@ html,body{
 .page5-left p{
     font-family: font2;
     font-weight: 100;
-    line-height: 5vw;
-    font-size: 3.5vw;
+    line-height: 6.5vw;
+    font-size: 4.5vw;
     text-transform: initial;
 }
 
@@ -1060,6 +1057,7 @@ html,body{
 .page5-right{
     height: 100%;
     width: 100%;
+    
 }
 
 
@@ -1067,21 +1065,21 @@ html,body{
     min-height: 80vh;
     width: 100%;
     padding-left: 4vw;
-    padding-top: 25vw;
+    padding-top: 15vw;
     padding-bottom: 4vw;
 }
 
 
 
 .page6 h6{
-    font-size: 3.5vw;
+    margin-top: 15vw;
+    font-size: 4.5vw;
     margin-bottom: 25vw;
 }
 
 .page6 span{
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
-
 .swiper {
     width: 100%;
   }
@@ -1127,12 +1125,7 @@ html,body{
     width: 140%;
     z-index: 0;
     filter: blur(50px);
-    background-color: #FE330A;
-    animation-name: anime5;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+
 }
 
 .footer-shape1{
@@ -1143,16 +1136,10 @@ html,body{
     width: 140%;
     z-index: 0;
     filter: blur(50px);
-    background-color: #FE330A;
-    animation-name: anime6;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+
 }
 
 .footer-shape2{
-    position: absolute;
     height: 30vw;
     width: 100%;
     background-color: #FE330A;
