@@ -1219,4 +1219,10 @@ display: none;
     font-family: font2;
     font-weight: 100;
 }
+
+.loader h2{
+    font-size: 8vw;
+
+}
+
 }
